@@ -1,16 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>
-			Steve Hsu
-		</title>
-	</head>
-	<body>
-		<h1>
-			Steve Hsu
-		</h1>
-		<p>
-			<a href="transcript.pdf">Unofficial Transcript</a>
-		</p>
-	</body>
+  <head>
+    <title>Steve Hsu</title>
+  </head>
+  <body>
+    <header>
+      <h1>Steve Hsu</h1>
+      <figure style="float:right;">
+        <img
+          src="picture.jpg"
+          alt="Steve in front of the Royal Palace of Amsterdam"
+          width=264px height=320px
+          />
+        <figcaption>
+          first-year PhD student at the University of Pennsylvania
+        </figcaption>
+      </figure>
+    </header>
+    <section id="contact_info">
+      <h2>Contact Information</h2>
+      <dl>
+        <dt>email</dt>
+        <dd>stevehsu seas upenn edu</dd>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/bnjw5jhyxn">bnjw5jhyxn</a></dd>
+      </dl>
+    </section>
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Program Analysis</li>
+        <li>Program Synthesis</li>
+        <li>Programming Languages</li>
+        <li>Machine Learning</li>
+      </ul>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          University of Pennsylvania:
+          PhD student in computer science,
+          2019&ndash;present
+        </li>
+        <li>
+          Rutgers University:
+          BS in computer science and mathematics (summa cum laude),
+          2015&ndash;2019
+        </li>
+      </ul>
+    </section>
+    <section id="research">
+      <h2>Research Experience</h2>
+      <section id="current_research">
+        <h3>Current</h3>
+        <dl>
+          <dt>
+          Verifying Autonomous Systems:
+          September 2019&ndash;present
+          with Rajeev Alur, Osbert Bastani, and Shaan Vaidya
+          </dt>
+          <dd>
+          Neural networks are widely used as autonomous agents,
+          but they are computationally expensive to verify.
+          We plan to train an automous agent that
+          will be efficiently verifiable.
+          Using an <a href="https://f1tenth.org/">F1/10 car</a> to test our approach,
+          we intend to use
+          <a href="https://arxiv.org/abs/1907.05431">
+            Imitation-Projected Programmatic Reinforcement Learning</a>
+          to achieve our goal of a safe self-driving F1/10 car.
+          </dd>
+        </dl>
+      </section>
+      <section id="previous_research">
+        <h3>Previous</h3>
+        <dl>
+          <dt>
+          Verifying eBPF Programs:
+          January&ndash;July 2019
+          with Santosh Nagarakatte and Srinivas Narayana
+          </dt>
+          <dd>
+          I wrote a translator
+          that takes in eBPF programs written in an assembly-like syntax
+          and outputs a Z3 query specifying the relationship
+          between its inputs and outputs.
+          This project studies the Linux kernel's eBPF verifier with the goal
+          of proving its soundness (or finding a counterexample).
+          Professors Nagarakatte and Narayana are continuing the project
+          with a Facebook Networking Systems Research Award.
+          </dd>
+          <dt>
+          Verifying Assembly Implementations of Cryptographic Algorithms:
+          September 2017&ndash;May 2018
+          with Jay Lim, Santosh Nagarakatte, and Mihai Andrei
+          </dt>
+          <dd>
+          I wrote some tests for an equivalence checker
+          late in this project's development.
+          The equivalence checker works on on loop-free programs
+          written either in an assembly language or in a DSL
+          designed to express cryptographic algorithms.
+          The results of the project are published in the paper
+          <a href="https://www.cs.rutgers.edu/~santosh.nagarakatte/papers/casm-verify-cgo-2019.pdf">
+            Automatic Equivalence Checking for Assembly Implementations
+            of Cryptographic Algorithms</a>.
+          </dd>
+        </dl>
+      </section>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <section id="tools">
+        <h3>Tools</h3>
+        <ul>
+          <li>LLVM framework (C++ API)</li>
+          <li>Coq proof assistant</li>
+          <li>Z3 theorem prover (C++ and Python APIs)</li>
+          <li>TLA+ model checker</li>
+        </ul>
+      </section>
+      <section id="languages">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Standard ML</li>
+        </ul>
+      </section>
+      <section id="other_skills">
+        <h3>Other</h3>
+        <ul>
+          <li>
+            mathematical maturity
+            (2017 Putnam&mdash;score 30, rank 397;
+            2018 Putnam&mdash;score 29, rank 400.5)
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section id="industry">
+      <h2>Industry Experience</h2>
+      <dl>
+        <dt>
+        internship at Amazon Connect (Amazon Web Services), summer 2018
+        </dt>
+        <dd>
+        I implemented a variation of a feature called least-cost routing,
+        which sends an outgoing call through the cheapest available carrier.
+        </dd>
+      </dl>
+    </section>
+  </body>
 </html>
