@@ -13,7 +13,7 @@
           width=264px height=320px
           />
         <figcaption>
-          first-year PhD student at the University of Pennsylvania
+          second-year PhD student at the University of Pennsylvania
         </figcaption>
       </figure>
     </header>
@@ -21,7 +21,7 @@
       <h2>Contact Information</h2>
       <dl>
         <dt>email</dt>
-        <dd>stevehsu seas upenn edu</dd>
+        <dd>stevehsu at seas upenn edu</dd>
         <dt>GitHub</dt>
         <dd><a href="https://github.com/bnjw5jhyxn">bnjw5jhyxn</a></dd>
       </dl>
@@ -56,26 +56,44 @@
         <h3>Current</h3>
         <dl>
           <dt>
-          Verifying Autonomous Systems:
-          September 2019&ndash;present
-          with Rajeev Alur, Osbert Bastani, and Shaan Vaidya
+          Compositionally reinforcement learning
+          December 2020&ndash;present
+          with Rajeev Alur, Osbert Bastani, and Kishor Jothimurugan
           </dt>
           <dd>
-          Neural networks are widely used as autonomous agents,
-          but they are computationally expensive to verify.
-          We plan to train an automous agent that
-          will be efficiently verifiable.
-          Using an <a href="https://f1tenth.org/">F1/10 car</a> to test our approach,
-          we intend to use
-          <a href="https://arxiv.org/abs/1907.05431">
-            Imitation-Projected Programmatic Reinforcement Learning</a>
-          to achieve our goal of a safe self-driving F1/10 car.
+          We want to design a compositional reinforcement learning algorithm
+          that breaks up a complex task into subtasks, solves each subtask,
+          and combines the solutions into a procedure for the whole task.
+          We will require the user to give a
+          <a href="https://en.wikipedia.org/wiki/Stanford_Research_Institute_Problem_Solver">STRIPS</a>-style specification of the problem,
+          and we'll need to specify how the STRIPS predicates correspond
+          to states in the reinforcement learning environment,
+          but we hope to automate the rest of the process.
           </dd>
         </dl>
       </section>
       <section id="previous_research">
         <h3>Previous</h3>
         <dl>
+          <dt>
+          Compositionally training and verifying a controller for an F1/10 car
+          September 2019&ndash;November 2020
+          with Rajeev Alur, Osbert Bastani, Shaan Vaidya, Kishor Jothimurugan, and Radoslav Ivanov
+          </dt>
+          <dd>
+          We trained a car to drive in a class of configurations of hallways
+          and we proved that it doesn't crash (at least in a simulator).
+          Our training was compositional in the sense that
+          we represented hallways as a sequnece of segments
+          (straight, 90&#176; left, 90&#176; right, 120&#176; left, and 120&#176; right),
+          trained a controller that can drive the car on each segment type,
+          and trained a <q>mode predictor</q> that decides which controller to use at any given moment.
+          Our verification was also compositional and proceeded by induction
+          on the number of segments in the hallway.
+          (For the base case, we needed to assume that
+          the car stared in a <q>reasonable</q> position.)
+          We submitted this work to PLDI in November 2020.
+          </dd>
           <dt>
           Verifying eBPF Programs:
           January&ndash;July 2019
@@ -112,6 +130,15 @@
     </section>
     <section id="skills">
       <h2>Skills</h2>
+      <section id="courses">
+        <h3>Courses</h3>
+        <ul>
+          <li>Software Engineering (Penn CIS 573, Professor Mayur Naik)</li>
+          <li>Software Systems (Penn CIS 505, Profesor Linh Phan)</li>
+          <li>Software Foundations (Penn CIS 500, Professor Benjamin Pierce)</li>
+          <li>Machine Learning (Penn CIS 520, Professor Shivani Agarwal)</li>
+        </ul>
+      </section>
       <section id="tools">
         <h3>Tools</h3>
         <ul>
